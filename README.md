@@ -4,6 +4,7 @@ Expense Tracker adalah aplikasi web untuk mengelola keuangan pribadi secara sede
 
 
 ✨ Fitur Utama
+
 📊 Dashboard
 - Menampilkan total saldo keseluruhan
 - Menampilkan total pemasukan
@@ -77,7 +78,7 @@ Semua perubahan saldo dilakukan secara transaction-safe (BEGIN / COMMIT / ROLLBA
 git clone https://github.com/ahmadzipur/expense-tracker.git
 
 # masuk folder
-cd smart-expense-tracker
+cd expense-tracker
 
 # install dependency
 npm install
@@ -95,7 +96,11 @@ JWT_SECRET=your_secret_key
 
 ## 📷 Preview
 
+## 📝 Register Page
+
 ![Register](./assets/register.png)
+
+## 🔐 Login Page
 
 ![Login](./assets/login.png)
 
@@ -110,22 +115,25 @@ JWT_SECRET=your_secret_key
 ## 💸 Transaksi
 
 ![Transaksi](./assets/transaksi1.png)
+
 ![Transaksi](./assets/transaksi2.png)
 
 
 
 ## 📈 Pengembangan Selanjutnya
 
-Grafik pengeluaran bulanan
-Export laporan PDF/Excel
-Kategori transaksi
-Budgeting system
-Notifikasi pengeluaran berlebih
+- Grafik pengeluaran bulanan
+- Export laporan PDF/Excel
+- Kategori transaksi
+- Budgeting system
+- Notifikasi pengeluaran berlebih
 
 ## 💻 Author
 
 Ahmad Zaelani
 23552011179
+
+Expense Tracker
 
 Smart Finance App (Productivity Tools) – Personal Expense Management System
 
