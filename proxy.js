@@ -1,0 +1,49 @@
+import { NextResponse } from "next/server"
+
+export function proxy(req) {
+
+    const token =
+        req.cookies.get(
+            "token"
+        )?.value
+
+    const pathname =
+        req.nextUrl.pathname
+
+    const protectedRoutes = [
+        "/dashboard",
+        "/rekening"
+    ]
+
+    const protectedPage =
+        protectedRoutes.some(
+            route =>
+                pathname.startsWith(route)
+        )
+
+    if (
+        protectedPage &&
+        !token
+    ) {
+
+        return NextResponse.redirect(
+            new URL(
+                "/login",
+                req.url
+            )
+        )
+
+    }
+
+    return NextResponse.next()
+
+}
+
+export const config = {
+
+    matcher: [
+        "/dashboard/:path*",
+        "/rekening/:path*"
+    ]
+
+}
