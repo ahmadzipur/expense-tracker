@@ -4,43 +4,33 @@ Expense Tracker adalah aplikasi web untuk mengelola keuangan pribadi secara sede
 
 
 ✨ Fitur Utama
-
 📊 Dashboard
-
-Menampilkan total saldo keseluruhan
-Menampilkan total pemasukan
-Menampilkan total pengeluaran
-Menampilkan daftar rekening beserta saldo masing-masing
-
+- Menampilkan total saldo keseluruhan
+- Menampilkan total pemasukan
+- Menampilkan total pengeluaran
+- Menampilkan daftar rekening beserta saldo masing-masing
 
 🏦 Halaman Rekening
-
-Menampilkan daftar semua rekening
-Menampilkan saldo tiap rekening
-Menambahkan rekening baru dengan mudah
-
+- Menampilkan daftar semua rekening
+- Menampilkan saldo tiap rekening
+- Menambahkan rekening baru dengan mudah
 
 💸 Halaman Transaksi
-
-Menambahkan transaksi pemasukan dan pengeluaran
-Menampilkan daftar transaksi
-Edit transaksi (update rekening, jumlah, tipe, dan deskripsi)
-Hapus transaksi
-Validasi saldo otomatis (tidak bisa minus)
-
+- Menambahkan transaksi pemasukan dan pengeluaran
+- Menampilkan daftar transaksi
+- Edit transaksi (update rekening, jumlah, tipe, dan deskripsi)
+- Hapus transaksi
+- Validasi saldo otomatis (tidak bisa minus)
 
 ⚙️ Teknologi yang Digunakan
-
-Next.js (App Router)
-React.js
-PostgreSQL
-Node.js API Routes
-Tailwind CSS (UI Styling)
-JWT Authentication
-
+- Next.js (App Router)
+- React.js
+- PostgreSQL
+- Node.js API Routes
+- Tailwind CSS (UI Styling)
+- JWT Authentication
 
 🧠 Cara Kerja Sistem
-
 Setiap transaksi akan langsung mempengaruhi saldo rekening
 Pemasukan akan menambah saldo
 Pengeluaran akan mengurangi saldo
@@ -49,7 +39,6 @@ Update dan delete transaksi akan otomatis menyesuaikan saldo kembali (rollback l
 
 
 🗂️ Struktur Halaman
-
 /dashboard
   - Total saldo
   - Total pemasukan
@@ -67,21 +56,18 @@ Update dan delete transaksi akan otomatis menyesuaikan saldo kembali (rollback l
   
   
 🔐 Sistem Keamanan
-
 Autentikasi menggunakan JWT (token di cookies)
 Setiap data user dipisahkan berdasarkan user_id
 Akses API dilindungi middleware autentikasi
 
 
 📌 Validasi Sistem
-
 Transaksi pengeluaran tidak boleh melebihi saldo rekening
 Rekening harus valid sebelum transaksi diproses
 Semua perubahan saldo dilakukan secara transaction-safe (BEGIN / COMMIT / ROLLBACK)
 
 
 🚀 Cara Menjalankan Project
-
 # clone repository
 git clone https://github.com/ahmadzipur/expense-tracker.git
 
@@ -99,7 +85,8 @@ Buat file .env.local:
 
 DATABASE_URL=your_postgres_url
 JWT_SECRET=your_secret_key
-📷 Preview
+
+## 📷 Preview
 
 ![Register](./assets/register.png)
 
@@ -120,13 +107,15 @@ JWT_SECRET=your_secret_key
 
 
 
-📈 Pengembangan Selanjutnya
+## 📈 Pengembangan Selanjutnya
+
 Grafik pengeluaran bulanan
 Export laporan PDF/Excel
 Kategori transaksi
 Budgeting system
 Notifikasi pengeluaran berlebih
-👨‍💻 Author
+
+## 💻 Author
 
 Ahmad Zaelani
 23552011179
