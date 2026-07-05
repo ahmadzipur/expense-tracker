@@ -1,6 +1,5 @@
 "use client";
 
-import ExpenseChart from "@/components/ExpenseChart";
 import { useEffect, useState } from "react";
 
 export default function Dashboard() {

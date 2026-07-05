@@ -44,7 +44,7 @@ export default function Sidebar() {
           <div className="flex justify-between items-center mb-10">
             <div>
               <div className="text-3xl">💳</div>
-              <h1 className="font-bold text-2xl">Smart Expense</h1>
+              <h1 className="font-bold text-2xl">Expense Tracker</h1>
             </div>
             <button
               className="lg:hidden text-2xl"

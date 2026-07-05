@@ -15,10 +15,10 @@ export default function Logo() {
             </div>
             <div>
                 <div className="text-2xl font-bold">
-                    Smart Expense
+                    Expense Tracker
                 </div>
                 <div className="text-sm text-slate-300">
-                    Track • Budget • Grow
+                    
                 </div>
             </div>
         </div>

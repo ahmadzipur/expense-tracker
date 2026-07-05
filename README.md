@@ -1,3 +1,140 @@
+💰 Expense Tracker
+
+Expense Tracker adalah aplikasi web untuk mengelola keuangan pribadi secara sederhana namun powerful. Aplikasi ini memungkinkan pengguna untuk mencatat pemasukan, pengeluaran, serta mengelola beberapa rekening dengan saldo masing-masing.
+
+
+✨ Fitur Utama
+
+📊 Dashboard
+
+Menampilkan total saldo keseluruhan
+Menampilkan total pemasukan
+Menampilkan total pengeluaran
+Menampilkan daftar rekening beserta saldo masing-masing
+
+
+🏦 Halaman Rekening
+
+Menampilkan daftar semua rekening
+Menampilkan saldo tiap rekening
+Menambahkan rekening baru dengan mudah
+
+
+💸 Halaman Transaksi
+
+Menambahkan transaksi pemasukan dan pengeluaran
+Menampilkan daftar transaksi
+Edit transaksi (update rekening, jumlah, tipe, dan deskripsi)
+Hapus transaksi
+Validasi saldo otomatis (tidak bisa minus)
+
+
+⚙️ Teknologi yang Digunakan
+
+Next.js (App Router)
+React.js
+PostgreSQL
+Node.js API Routes
+Tailwind CSS (UI Styling)
+JWT Authentication
+
+
+🧠 Cara Kerja Sistem
+
+Setiap transaksi akan langsung mempengaruhi saldo rekening
+Pemasukan akan menambah saldo
+Pengeluaran akan mengurangi saldo
+Sistem akan menolak transaksi jika saldo tidak mencukupi
+Update dan delete transaksi akan otomatis menyesuaikan saldo kembali (rollback logic)
+
+
+🗂️ Struktur Halaman
+
+/dashboard
+  - Total saldo
+  - Total pemasukan
+  - Total pengeluaran
+  - List rekening + saldo
+
+/accounts
+  - List rekening
+  - Form tambah rekening
+
+/transactions
+  - Form tambah transaksi
+  - List transaksi
+  - Edit & delete transaksi
+  
+  
+🔐 Sistem Keamanan
+
+Autentikasi menggunakan JWT (token di cookies)
+Setiap data user dipisahkan berdasarkan user_id
+Akses API dilindungi middleware autentikasi
+
+
+📌 Validasi Sistem
+
+Transaksi pengeluaran tidak boleh melebihi saldo rekening
+Rekening harus valid sebelum transaksi diproses
+Semua perubahan saldo dilakukan secara transaction-safe (BEGIN / COMMIT / ROLLBACK)
+
+
+🚀 Cara Menjalankan Project
+
+# clone repository
+git clone https://github.com/ahmadzipur/expense-tracker.git
+
+# masuk folder
+cd smart-expense-tracker
+
+# install dependency
+npm install
+
+# jalankan development server
+npm run dev
+🛠️ Environment Variables
+
+Buat file .env.local:
+
+DATABASE_URL=your_postgres_url
+JWT_SECRET=your_secret_key
+📷 Preview
+
+![Register](./assets/register.png)
+
+![Login](./assets/login.png)
+
+## 📊 Dashboard
+
+![Dashboard](./assets/dashboard.png)
+
+## 🏦 Rekening
+
+![Rekening](./assets/rekening.png)
+
+## 💸 Transaksi
+
+![Transaksi](./assets/transaksi1.png)
+![Transaksi](./assets/transaksi2.png)
+
+
+
+📈 Pengembangan Selanjutnya
+Grafik pengeluaran bulanan
+Export laporan PDF/Excel
+Kategori transaksi
+Budgeting system
+Notifikasi pengeluaran berlebih
+👨‍💻 Author
+
+Ahmad Zaelani
+23552011179
+Smart Finance App – Personal Expense Management System
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
